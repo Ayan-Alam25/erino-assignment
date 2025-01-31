@@ -1,0 +1,234 @@
+.home-section {
+  padding: 1rem;
+}
+
+.home-section .heading h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.home-section .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-section .flex .left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1 1 30rem;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-section .flex .left-container .botton-container .graph-container .flex {
+  max-width: 480px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.home-section
+  .flex
+  .left-container
+  .botton-container
+  .graph-container
+  .flex
+  h5 {
+  font-size: 0.9rem;
+}
+
+.home-section
+  .flex
+  .left-container
+  .botton-container
+  .graph-container
+  .flex
+  .pie,
+.doughnut {
+  margin-top: -2.2rem;
+}
+
+.expense-form-container {
+  margin: auto;
+  max-width: 480px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expense-form-container .form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.expense-form-container .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #555555;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background: #f9f9f9;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #ffffff;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  grid-column: span 2;
+  margin-top: 0.5rem;
+}
+
+.home-section .flex .right-container {
+  flex: 1 1 50rem;
+  background-color: bisque;
+  padding: 10px;
+  display: grid;
+  height: fit-content;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-section .right-container .box {
+  background-color: #ddd;
+  height: fit-content;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-section .right-container .box p {
+  margin-top: 4px;
+}
+
+.home-section .right-container .box p span {
+  font-weight: 600;
+}
+
+.home-section .right-container .box .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: right;
+  margin-bottom: 6px;
+}
+
+.home-section .right-container .box .icons .fa-solid {
+  padding: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home-section .right-container .box .icons .fa-pen-to-square {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.home-section .right-container .box .icons .fa-trash {
+  color: #fff;
+  background-color: #f44336;
+}
+
+.expense-details {
+  font-family: Arial, sans-serif;
+  line-height: 1.3;
+}
+
+.expense-details p {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0;
+}
+
+.expense-details .icon {
+  color: #333;
+  margin-right: 10px;
+}
+
+.expense-details span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .home-section .flex .right-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 851px) {
+  .home-section .flex .right-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .home-section .flex .right-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .home-section .flex .left-container .botton-container .graph-container .flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-section
+    .flex
+    .left-container
+    .botton-container
+    .graph-container
+    .flex
+    h5 {
+    font-size: 1.2rem;
+  }
+}

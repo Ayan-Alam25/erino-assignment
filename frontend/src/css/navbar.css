@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+}
+
+.navbar .logo {
+  cursor: pointer;
+}
+
+.navbar .logo span {
+  color: #ff5733;
+  font-size: 1.8rem;
+}
+
+.navbar .nav .link,
+.logout {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .navbar .logo span {
+    color: #ff5733;
+    font-size: 1.6rem;
+  }
+}
